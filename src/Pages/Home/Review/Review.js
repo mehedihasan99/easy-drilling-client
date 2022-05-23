@@ -6,7 +6,7 @@ const Review = () => {
       <h2 className="text-4xl font-bold text-center text-primary my-20">
         Reviews
       </h2>
-      <div className="grid grid-col-1 gap-8 lg:grid-cols-3">
+      <div className="grid grid-col-1 gap-8 md:grid-cols-2  lg:grid-cols-3">
         {/* 1 */}
         <div class="card w-96 bg-base-100 shadow-xl">
           <div class="card-body">

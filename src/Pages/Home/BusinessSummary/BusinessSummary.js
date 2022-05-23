@@ -2,18 +2,18 @@ import React from "react";
 
 const BusinessSummary = () => {
   return (
-    <div>
+    <div className="text-center">
       <h2 className="text-3xl font-bold text-center text-primary my-20">
         Business Summary
       </h2>
-      <div class="stats shadow">
+      <div class=" shadow grid gap-y-8 grid-col-1 lg:grid-cols-3">
         <div class="stat">
           <div class="stat-figure text-primary">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
-              class="inline-block w-8 h-8 lg:w-64 lg:h-40 stroke-current"
+              class="inline-block w-8 h-8 lg:w-full lg:h-40 stroke-current"
             >
               <path
                 stroke-linecap="round"
@@ -34,7 +34,7 @@ const BusinessSummary = () => {
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
-              class="inline-block w-8 h-8 lg:w-64 lg:h-40 stroke-current"
+              class="inline-block w-8 h-8 lg:w-full lg:h-40 stroke-current"
             >
               <path
                 stroke-linecap="round"
@@ -54,7 +54,7 @@ const BusinessSummary = () => {
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
-              class="inline-block w-8 h-8 lg:w-64 lg:h-40 stroke-current"
+              class="inline-block w-8 h-8 lg:w-full lg:h-40 stroke-current"
             >
               <path
                 stroke-linecap="round"

@@ -10,7 +10,7 @@ const Tools = () => {
       <h2 className="text-4xl font-bold text-center text-primary my-20">
         Our Tools
       </h2>
-      <div className="grid grid-cols-3">
+      <div className="grid grid-col-1 lg:grid-cols-3">
         {myTools.map((tool) => (
           <Tool key={tool._id} tool={tool}></Tool>
         ))}

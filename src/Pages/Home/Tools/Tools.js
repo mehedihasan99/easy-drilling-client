@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import useDrillProduct from "../../../hook/useDrillProduct";
 import Tool from "../Home/Tool/Tool";
+import PurchaseModal from "../PurchaseModal/PurchaseModal";
 
 const Tools = () => {
   const [tools, setTools] = useDrillProduct();
+  const [Purchase, setPurchase] = useState(null);
   const myTools = tools.slice(0, 6);
   return (
     <div>
@@ -12,9 +14,15 @@ const Tools = () => {
       </h2>
       <div className="grid grid-col-1  md:grid-cols-2 lg:grid-cols-3">
         {myTools.map((tool) => (
-          <Tool key={tool._id} tool={tool}></Tool>
+          <Tool key={tool._id} tool={tool} setPurchase={setPurchase}></Tool>
         ))}
       </div>
+      {Purchase && (
+        <PurchaseModal
+          Purchase={Purchase}
+          setPurchase={setPurchase}
+        ></PurchaseModal>
+      )}
     </div>
   );
 };

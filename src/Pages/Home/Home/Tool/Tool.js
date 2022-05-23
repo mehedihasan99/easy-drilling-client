@@ -1,6 +1,6 @@
 import React from "react";
 
-const Tool = ({ tool }) => {
+const Tool = ({ tool, setPurchase }) => {
   const {
     name,
     description,
@@ -26,7 +26,15 @@ const Tool = ({ tool }) => {
           </h2>
           <h2 class="card-title text-1xl">Price: {price}</h2>
           <div class="card-actions justify-end">
-            <button class="btn btn-primary">Buy Now</button>
+            <label
+              onClick={() => setPurchase(tool)}
+              class="btn btn-primary"
+              for="purchase-modal"
+              btn
+              modal-button
+            >
+              purchase
+            </label>
           </div>
         </div>
       </div>

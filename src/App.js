@@ -8,6 +8,8 @@ import MySignUp from "./Pages/Login/MySignUp";
 import RequireAuth from "./Pages/Login/RequireAuth";
 import Purchase from "./Pages/Purchase/Purchase";
 import NavBar from "./Pages/Shared/NavBar/NavBar";
+import DashBoard from "./Pages/DashBoard/DashBoard";
+import NotFound from "./Pages/Shared/NotFound";
 
 function App() {
   return (
@@ -25,7 +27,17 @@ function App() {
             </RequireAuth>
           }
         />
+        <Route
+          path="/dashboard"
+          element={
+            <RequireAuth>
+              <DashBoard />
+            </RequireAuth>
+          }
+        ></Route>
+        <Route path="*" element={<NotFound />} />
       </Routes>
+
       <ToastContainer />
     </div>
   );

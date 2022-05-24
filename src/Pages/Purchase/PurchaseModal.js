@@ -1,5 +1,6 @@
 import React from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
+import { toast } from "react-toastify";
 import auth from "../../firebase.init";
 
 const PurchaseModal = ({ Purchase, setPurchase }) => {
@@ -29,11 +30,13 @@ const PurchaseModal = ({ Purchase, setPurchase }) => {
       })
         .then((res) => res.json())
         .then((data) => {
-          console.log(data);
+          toast.success("Successfully Purchases");
           setPurchase(null);
         });
     } else {
-      console.log("error bhai error");
+      toast.error(
+        "Full-fill the condition about available quantity and minimum order quantity"
+      );
       setPurchase(null);
     }
   };

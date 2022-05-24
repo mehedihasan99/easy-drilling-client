@@ -17,6 +17,13 @@ const NavBar = () => {
       <li>
         <Link to="/purchase">Purchase</Link>
       </li>
+      {user && (
+        <>
+          <li>
+            <Link to="/dashboard">DashBoard</Link>
+          </li>
+        </>
+      )}
       <li>
         {user ? (
           <button onClick={logout} className="btn btn-ghost normal-case">

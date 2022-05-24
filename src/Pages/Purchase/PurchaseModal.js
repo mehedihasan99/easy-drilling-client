@@ -4,12 +4,38 @@ import auth from "../../firebase.init";
 
 const PurchaseModal = ({ Purchase, setPurchase }) => {
   const [user, loading, error] = useAuthState(auth);
-  const { name, availableQuantity, minimumOrderQuantity } = Purchase;
+  const { _id, name, availableQuantity, minimumOrderQuantity } = Purchase;
   const handleSubmit = (event) => {
     event.preventDefault();
-    const quantity = event.target.quantity.value;
-    console.log(quantity);
-    setPurchase(null);
+    const quantity = parseInt(event.target.quantity.value);
+    const mainQuantity = parseInt(availableQuantity);
+
+    if (minimumOrderQuantity < quantity && mainQuantity > quantity) {
+      const purchase = {
+        purchaseId: _id,
+        purchase: name,
+        quantity,
+        customer: user.email,
+        customerName: user.displayName,
+        address: event.target.address.value,
+        phone: event.target.phone.value,
+      };
+      fetch("http://localhost:5000/purchase", {
+        method: "POST",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify(purchase),
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          console.log(data);
+          setPurchase(null);
+        });
+    } else {
+      console.log("error bhai error");
+      setPurchase(null);
+    }
   };
   return (
     <div>

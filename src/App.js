@@ -1,5 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import Home from "./Pages/Home/Home/Home";
 import MyLogin from "./Pages/Login/MyLogin";
 import MySignUp from "./Pages/Login/MySignUp";
@@ -24,6 +26,7 @@ function App() {
           }
         />
       </Routes>
+      <ToastContainer />
     </div>
   );
 }

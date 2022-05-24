@@ -1,6 +1,5 @@
 [
   {
-    "_id": "1",
     "name": "ND-2011",
     "image": "https://i.ibb.co/sQ034gK/drill-1.jpg",
     "description": "Apply to trauma operation. 4.0mm hollow for all brand needles to pass through.Autoclavable can be sterilized up to 135°C.",
@@ -8,7 +7,6 @@
     "availableQuantity": 440,
     "price": "$75"
   }, {
-    "_id": "2",
     "name": "MD-1002",
     "image": "https://i.ibb.co/NCZhbTc/drill-2.jpg",
     "description": "The orthopedic power drill is also orthopedic drill machine can be used in trauma operation, accurate dimensions, new motor with strong and stable output, quiet and smooth operation.durable.",
@@ -17,7 +15,6 @@
     "price": "$55"
   },
   {
-    "_id": "3",
     "name": "MD-3012",
     "image": "https://i.ibb.co/q025hnH/drill-3.jpg",
     "description": "Excellent High Torque Hip Joint Drill for joint operation, Powerful motors can provide the best speed and power.The convenience of portability.",
@@ -26,7 +23,6 @@
     "price": "$95"
   },
   {
-    "_id": "4",
     "name": "ND-1001",
     "image": "https://i.ibb.co/ggRyfSZ/drill-4.jpg",
     "description": "Designed for trauma surgery. This medical bone drill made of high-strength biomedical stainless steel, with low noise, low vibration, variable speed, portable, lightweight, and reliable performance",
@@ -35,7 +31,6 @@
     "price": "$29"
   },
   {
-    "_id": "5",
     "name": "ND-1011",
     "image": "https://i.ibb.co/fSDkR8X/drill-5.jpg",
     "description": "Designed for trauma surgery. This medical bone drill made of high-strength biomedical stainless steel, with low noise, low vibration, variable speed, portable, lightweight, and reliable performance",
@@ -44,7 +39,6 @@
     "price": "$67"
   },
 {
-    "_id": "6",
     "name": "ND-3011",
     "image": "https://i.ibb.co/8rg9k6s/drill-6.jpg",
     "description": "ND-3011High Torque Hip Joint Drill for hip and joint operation, high coaxiality.This instrument is conveniently battery operated.The main components are made of high-strength biomedical stainless steel.",
@@ -53,7 +47,6 @@
     "price": "$34"
   },
   {
-    "_id": "7",
     "name": "ND-4011",
     "image": "https://i.ibb.co/ZdcMw0j/drill-7.jpg",
     "description": "Easy handling and ergonomic design.This craniotomy drill is also brain surgery drill allows medical personnel to make holes in the skull safely, apply to neurosurgery, consistent power during the operation",
@@ -62,7 +55,6 @@
     "price": "$85"
   },
   {
-    "_id": "8",
     "name": "ND-5001",
     "image": "https://i.ibb.co/YDYC77W/drill-8.jpg",
     "description": "Micro Bone Drill  Machine made of high strength stainless steel.Lower weight and noise, portable, less operation time, long working hours, strong and steady power output, modified structure are easier to use,variable-speed trigger, optimal balance",
@@ -71,7 +63,6 @@
     "price": "$29"
   },
   {
-    "_id": "9",
     "name": "ND-5002",
     "image": "https://i.ibb.co/KrrvJW3/drill-9.jpg",
     "description": "Micro Cannulated Drill excellent for trauma operation. Very low noise provides a quiet environment.lightweight and Smooth feel.Powerful motors can provide the best speed and power.",
@@ -80,7 +71,6 @@
     "price": "$28"
   },
   {
-    "_id": "10",
     "name": "RJ-W-MZ-1",
     "image": "https://i.ibb.co/4dYFQWs/drill-10.jpg",
     "description": "Micro Medical Electric Spine Drill with straight-handle and angled-handle, different length, applied in neurosurgery, spine surgery and microsurgery.Angled-Handle applied in strong power, easy operating, various function, a wide range of applications, more comfortable operation.",

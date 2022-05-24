@@ -1,9 +1,10 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Home from "./Pages/Home/Home/Home";
-import Purchases from "./Pages/Home/Purchases/Purchases";
 import MyLogin from "./Pages/Login/MyLogin";
 import MySignUp from "./Pages/Login/MySignUp";
+import RequireAuth from "./Pages/Login/RequireAuth";
+import Purchase from "./Pages/Purchase/Purchase";
 import NavBar from "./Pages/Shared/NavBar/NavBar";
 
 function App() {
@@ -14,7 +15,14 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<MyLogin />} />
         <Route path="/signup" element={<MySignUp />} />
-        <Route path="/purchase/:id" element={<Purchases />} />
+        <Route
+          path="/purchase"
+          element={
+            <RequireAuth>
+              <Purchase />
+            </RequireAuth>
+          }
+        />
       </Routes>
     </div>
   );

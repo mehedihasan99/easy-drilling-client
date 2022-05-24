@@ -1,6 +1,6 @@
 import React from "react";
 
-const Tool = ({ tool }) => {
+const PurchaseTool = ({ tool, setPurchase }) => {
   const {
     name,
     description,
@@ -26,7 +26,7 @@ const Tool = ({ tool }) => {
           </h2>
           <h2 className="card-title text-1xl">Price: {price}</h2>
           <div className="card-actions justify-end">
-            {/* <label
+            <label
               onClick={() => setPurchase(tool)}
               className="btn btn-primary"
               htmlFor="purchase-modal"
@@ -34,7 +34,7 @@ const Tool = ({ tool }) => {
               modal-button
             >
               purchase
-            </label> */}
+            </label>
           </div>
         </div>
       </div>
@@ -42,4 +42,4 @@ const Tool = ({ tool }) => {
   );
 };
 
-export default Tool;
+export default PurchaseTool;

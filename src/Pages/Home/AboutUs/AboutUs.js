@@ -6,12 +6,12 @@ const AboutUs = () => {
       <h2 className="text-4xl font-bold text-center text-primary mt-20">
         Drill Machine
       </h2>
-      <div class="hero min-h-screen">
-        <div class="hero-content flex-col lg:flex-row-reverse">
+      <div className="hero min-h-screen">
+        <div className="hero-content flex-col lg:flex-row-reverse">
           <img className="rounded" src={drill} alt="" />
           <div>
-            <h1 class="text-5xl font-bold">Drill Machine</h1>
-            <p class="py-6">
+            <h1 className="text-5xl font-bold">Drill Machine</h1>
+            <p className="py-6">
               Drill machine is a useful tool used while making any DIY projects
               for drilling holes, making and assembling furniture, metalworking
               and woodworking. These drill machines are also known as Hand Drill

@@ -6,14 +6,14 @@ const BusinessSummary = () => {
       <h2 className="text-4xl font-bold text-center text-primary my-20">
         Business Summary
       </h2>
-      <div class=" shadow grid gap-y-8 grid-col-1 md:grid-cols-2 lg:grid-cols-3">
-        <div class="stat">
-          <div class="stat-figure text-primary">
+      <div className=" shadow grid gap-y-8 grid-col-1 md:grid-cols-2 lg:grid-cols-3">
+        <div className="stat">
+          <div className="stat-figure text-primary">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
-              class="inline-block w-8 h-8 lg:w-full lg:h-40 stroke-current"
+              className="inline-block w-8 h-8 lg:w-full lg:h-40 stroke-current"
             >
               <path
                 stroke-linecap="round"
@@ -23,18 +23,18 @@ const BusinessSummary = () => {
               ></path>
             </svg>
           </div>
-          <div class="stat-title">Available Quantity</div>
-          <div class="stat-value">10K</div>
-          <div class="stat-desc">Available Now</div>
+          <div className="stat-title">Available Quantity</div>
+          <div className="stat-value">10K</div>
+          <div className="stat-desc">Available Now</div>
         </div>
 
-        <div class="stat">
-          <div class="stat-figure text-primary">
+        <div className="stat">
+          <div className="stat-figure text-primary">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
-              class="inline-block w-8 h-8 lg:w-full lg:h-40 stroke-current"
+              className="inline-block w-8 h-8 lg:w-full lg:h-40 stroke-current"
             >
               <path
                 stroke-linecap="round"
@@ -44,17 +44,17 @@ const BusinessSummary = () => {
               ></path>
             </svg>
           </div>
-          <div class="stat-title">Delivery Products</div>
-          <div class="stat-value">4,200</div>
+          <div className="stat-title">Delivery Products</div>
+          <div className="stat-value">4,200</div>
         </div>
 
-        <div class="stat">
-          <div class="stat-figure text-primary">
+        <div className="stat">
+          <div className="stat-figure text-primary">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
-              class="inline-block w-8 h-8 lg:w-full lg:h-40 stroke-current"
+              className="inline-block w-8 h-8 lg:w-full lg:h-40 stroke-current"
             >
               <path
                 stroke-linecap="round"
@@ -64,8 +64,8 @@ const BusinessSummary = () => {
               ></path>
             </svg>
           </div>
-          <div class="stat-title">New Orders</div>
-          <div class="stat-value">1,200</div>
+          <div className="stat-title">New Orders</div>
+          <div className="stat-value">1,200</div>
         </div>
       </div>
     </div>

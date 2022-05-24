@@ -1,6 +1,9 @@
 import React from "react";
+import { useAuthState } from "react-firebase-hooks/auth";
+import auth from "../../firebase.init";
 
 const PurchaseModal = ({ Purchase, setPurchase }) => {
+  const [user, loading, error] = useAuthState(auth);
   const { name, availableQuantity, minimumOrderQuantity } = Purchase;
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -10,53 +13,57 @@ const PurchaseModal = ({ Purchase, setPurchase }) => {
   };
   return (
     <div>
-      <input type="checkbox" id="purchase-modal" class="modal-toggle" />
-      <div onSubmit={handleSubmit} class="modal modal-bottom sm:modal-middle">
-        <div class="modal-box">
+      <input type="checkbox" id="purchase-modal" className="modal-toggle" />
+      <div
+        onSubmit={handleSubmit}
+        className="modal modal-bottom sm:modal-middle"
+      >
+        <div className="modal-box">
           <label
-            for="purchase-modal"
-            class="btn btn-sm btn-circle absolute right-2 top-2"
+            htmlFor="purchase-modal"
+            className="btn btn-sm btn-circle absolute right-2 top-2"
           >
             ✕
           </label>
-          <h3 class="font-bold text-primary text-center text-lg my-5">
+          <h3 className="font-bold text-primary text-center text-lg my-5">
             Purchase Item: {name}
           </h3>
           <form className="grid grid-cols-1 gap-3 justify-items-center">
             <input
               type="text"
               name="name"
-              placeholder="Type here"
-              class="input input-bordered w-full max-w-xs"
+              disabled
+              value={user?.displayName}
+              className="input input-bordered w-full max-w-xs"
             />
             <input
               type="email"
               name="email"
-              placeholder="Type here"
-              class="input input-bordered w-full max-w-xs"
+              value={user?.email}
+              className="input input-bordered w-full max-w-xs"
             />
             <input
               type="text"
               name="address"
               placeholder="Your address"
-              class="input input-bordered w-full max-w-xs"
+              className="input input-bordered w-full max-w-xs"
             />
             <input
               type="phone"
               name="phone"
               placeholder="Phone number"
-              class="input input-bordered w-full max-w-xs"
+              className="input input-bordered w-full max-w-xs"
             />
             <input
               type="text"
               name="quantity"
               placeholder="Quantity"
-              class="input input-bordered w-full max-w-xs"
+              className="input input-bordered w-full max-w-xs"
             />
             <input
               type="submit"
               value="Purchase"
-              class="btn btn-primary input-bordered w-full max-w-xs"
+              className="btn btn-primary input-bordered w-full max-w-xs"
             />
           </form>
         </div>

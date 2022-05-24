@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import useDrillProduct from "../../../hook/useDrillProduct";
 import Tool from "../Home/Tool/Tool";
-import PurchaseModal from "../PurchaseModal/PurchaseModal";
 
 const Tools = () => {
   const [tools, setTools] = useDrillProduct();
+  // const [Purchase, setPurchase] = useState(null);
   const myTools = tools.slice(0, 6);
   return (
     <div>
@@ -16,6 +16,12 @@ const Tools = () => {
           <Tool key={tool._id} tool={tool}></Tool>
         ))}
       </div>
+      {/* {Purchase && (
+        <PurchaseModal
+          Purchase={Purchase}
+          setPurchase={setPurchase}
+        ></PurchaseModal>
+      )} */}
     </div>
   );
 };

@@ -13,6 +13,7 @@ import NotFound from "./Pages/Shared/NotFound";
 import CustomersOrder from "./Pages/DashBoard/CustomersOrder";
 import AddReview from "./Pages/DashBoard/AddReview";
 import Blogs from "./Pages/Blogs/Blogs";
+import Portfolio from "./Pages/Portfolio/Portfolio";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/blogs" element={<Blogs></Blogs>} />
         <Route path="/login" element={<MyLogin />} />
         <Route path="/signup" element={<MySignUp />} />
+        <Route path="/portfolio" element={<Portfolio />} />
         <Route
           path="/purchase"
           element={

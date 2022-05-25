@@ -20,6 +20,9 @@ const NavBar = () => {
       <li>
         <Link to="/Blogs">Blogs</Link>
       </li>
+      <li>
+        <Link to="/portfolio">My Portfolio</Link>
+      </li>
       {user && (
         <>
           <li>

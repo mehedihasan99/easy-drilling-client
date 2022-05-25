@@ -3,7 +3,12 @@ import React, { useEffect, useState } from "react";
 const CustomersOrder = () => {
   const [orders, setOrders] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/purchase")
+    fetch("http://localhost:5000/purchase", {
+      method: "GET",
+      headers: {
+        authorization: `Bearer ${localStorage.getItem("accessToken")}`,
+      },
+    })
       .then((res) => res.json())
       .then((data) => setOrders(data));
   }, []);

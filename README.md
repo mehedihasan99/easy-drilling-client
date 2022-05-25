@@ -1,6 +1,20 @@
-# Getting Started with Create React App
+# My Website Name: Easy Drilling
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Different features and functionality of my website.
+
+- At first, I am working in to the client site.
+- In the client site I installed react router and I create components.
+- Installed react firebase and make sure authentication with react firebase hook.
+- You can register and login in to this site
+- These are my webpages:- Home, Blogs, portfolio, dashboard
+- Used Private route by require auth
+- Without login you can't update items
+- After login you can add item and you also can delete item.
+- After completing server site, I work on heroku.
+- Finally, deployed the website into the firebase
+- technology I used: react, react router, bootstrap 5, react-bootstrap, firebase, firebase hook, axious, node, express, mongodb
 
 ## Available Scripts
 

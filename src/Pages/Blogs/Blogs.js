@@ -73,17 +73,47 @@ const Blogs = () => {
       <div class="card w-96 bg-base-100 shadow-xl">
         <div class="card-body">
           <h2 class="text-1xl text-indigo-600">
-            How does prototypical inheritance work?
+            Why you do not set the state directly in React.
           </h2>
           <p>
-            Every object with its methods and properties contains an internal
-            and hidden property known as [[Prototype]]. The Prototypal
-            Inheritance is a feature in javascript used to add methods and
-            properties in objects. It is a method by which an object can inherit
-            the properties and methods of another object. Traditionally, in
-            order to get and set the [[Prototype]] of an object, we use
-            Object.getPrototypeOf and Object.setPrototypeOf. Nowadays, in modern
-            language, it is being set using __proto__.
+            In React, every state update causes the component being updated to
+            re-render. Because re-rendering is an expensive operation, making
+            state updates synchronously can cause serious performance issues,
+            for example, increasing load times or causing your application to
+            crash. By batching state updates, React avoids unnecessary
+            re-renders, boosting performance overall.
+          </p>
+          <div>
+            <li>
+              If you update it directly, calling the setState() afterward may
+              just replace the update you made.
+            </li>
+            <li>When you directly update the state, it does not change this</li>
+          </div>
+          <p>So that, Why I do not set the state directly in React.</p>
+        </div>
+      </div>
+      <div class="card w-96 bg-base-100 shadow-xl">
+        <div class="card-body">
+          <h2 class="text-1xl text-indigo-600">
+            You have an array of products. Each product has a name, price,
+            description, etc. How will you implement a search to find products
+            by name?
+          </h2>
+          <p>
+            In this situation, I use the filter method in an array of product.
+          </p>
+        </div>
+      </div>
+      <div class="card w-96 bg-base-100 shadow-xl">
+        <div class="card-body">
+          <h2 class="text-1xl text-indigo-600">
+            You have an array of products. Each product has a name, price,
+            description, etc. How will you implement a search to find products
+            by name?
+          </h2>
+          <p>
+            In this situation, I use the filter method in an array of product.
           </p>
         </div>
       </div>

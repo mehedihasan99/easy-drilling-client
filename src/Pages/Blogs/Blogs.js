@@ -102,18 +102,34 @@ const Blogs = () => {
           </h2>
           <p>
             In this situation, I use the filter method in an array of product.
+            and I check the function by includes method
           </p>
         </div>
       </div>
       <div class="card w-96 bg-base-100 shadow-xl">
         <div class="card-body">
           <h2 class="text-1xl text-indigo-600">
-            You have an array of products. Each product has a name, price,
-            description, etc. How will you implement a search to find products
-            by name?
+            What is a unit test? Why should write unit tests?
           </h2>
+          <h2 className="font-bold">What is a unit test?</h2>
           <p>
-            In this situation, I use the filter method in an array of product.
+            A unit test verifies the behavior of a unit of software in the
+            system. It verifies whether a small and isolated piece of the
+            codebase called “unit” behaves as the developer intended. Unit tests
+            verify the smallest parts or components of an application by
+            comparing their actual behavior with the expected behavior in
+            complete isolation. Here, “complete isolation” means that, during
+            unit testing, devs do not connect the application with external
+            dependencies such as databases, the filesystem, or HTTP services.
+            This allows unit tests to be fast and stable since they won’t fail
+            due to problems integrating with those external services.
+          </p>
+          <h2 className="font-bold">Why should write unit tests?</h2>
+          <p>
+            In the case of unit tests, it allows for the modification of code
+            without affecting the functionality of other units or the software
+            in its entirety. This makes the job easier for developers as the
+            bugs are easy to locate at this stage, which saves time and money.
           </p>
         </div>
       </div>

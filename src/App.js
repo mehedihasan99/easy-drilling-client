@@ -12,6 +12,7 @@ import DashBoard from "./Pages/DashBoard/DashBoard";
 import NotFound from "./Pages/Shared/NotFound";
 import CustomersOrder from "./Pages/DashBoard/CustomersOrder";
 import AddReview from "./Pages/DashBoard/AddReview";
+import Blogs from "./Pages/Blogs/Blogs";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/blogs" element={<Blogs></Blogs>} />
         <Route path="/login" element={<MyLogin />} />
         <Route path="/signup" element={<MySignUp />} />
         <Route

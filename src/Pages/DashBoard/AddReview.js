@@ -29,6 +29,9 @@ const AddReview = () => {
   return (
     <div className="flex mt-5 ">
       <div className="card w-96 bg-base-100 shadow-xl">
+        <h2 className="text-2xl mb-4 text-center text-sky-700">
+          Add Your Review
+        </h2>
         <div className="card-body border">
           <form onSubmit={handleSubmit(onSubmit)}>
             <div className="form-control w-full max-w-xs">

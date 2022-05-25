@@ -1,78 +1,30 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { useWatch } from "react-hook-form";
 
 const Review = () => {
+  const [reviews, setReviews] = useState([]);
+  useEffect(() => {
+    fetch("http://localhost:5000/review")
+      .then((res) => res.json())
+      .then((data) => setReviews(data));
+  }, []);
   return (
     <div>
       <h2 className="text-4xl font-bold text-center text-primary my-20">
-        Reviews
+        Reviews:{reviews.length}
       </h2>
       <div className="grid grid-col-1 gap-8 md:grid-cols-2  lg:grid-cols-3">
-        {/* 1 */}
-        <div className="card w-96 bg-base-100 shadow-xl">
-          <div className="card-body">
-            <h2 className="card-title">– PotashCorp</h2>
-            <p>
-              “That was the fastest response I ever had, wow! I wish every
-              company we deal with was that fast!”
-            </p>
+        {reviews.map((review) => (
+          <div>
+            {/* 1 */}
+            <div className="card w-96 bg-base-100 shadow-xl">
+              <div className="card-body">
+                <h2 className="card-title">– {review.name}</h2>
+                <p>{review.textarea}</p>
+              </div>
+            </div>
           </div>
-        </div>
-        {/* 2 */}
-        <div className="card w-96 bg-base-100 shadow-xl">
-          <div className="card-body">
-            <h2 className="card-title">– Justine Bae</h2>
-            <p>
-              “We are 100% satisfied with Prater’s responsiveness to our needs,
-              exceptional delivery time, and overall customer service.”
-            </p>
-          </div>
-        </div>
-        {/* 3 */}
-        <div className="card w-96 bg-base-100 shadow-xl">
-          <div className="card-body">
-            <h2 className="card-title">– Wicks Pies</h2>
-            <p>
-              “As Quality Control, I love your sifter’s design and ease of
-              cleaning.”
-            </p>
-          </div>
-        </div>
-        {/* 4 */}
-        <div className="card w-96 bg-base-100 shadow-xl">
-          <div className="card-body">
-            <h2 className="card-title">– Barry Callebaut</h2>
-            <p>
-              “Just wanted you to know that the lump breaker has been running
-              very well. No problems since start up. Thanks for your help.”
-            </p>
-          </div>
-        </div>
-        {/* 5 */}
-        <div className="card w-96 bg-base-100 shadow-xl">
-          <div className="card-body">
-            <h2 className="card-title">– Harray Joe</h2>
-            <p>
-              {" "}
-              I could see that you have been working tirelessly day after day to
-              assist our customers in navigating the new change. It makes me
-              very proud to have such a dedicated team member working with us.
-              Great work!
-            </p>
-          </div>
-        </div>
-        {/* 6 */}
-        <div className="card w-96 bg-base-100 shadow-xl">
-          <div className="card-body">
-            <h2 className="card-title">– Joe Teamn</h2>
-            <p>
-              Thank you for all of the recent overtime you've worked to cover
-              for people who are on leave. Your efforts have enabled us to
-              uphold our customer service, ensuring that daily operations do not
-              come to a halt and that everything continues in a timely manner.
-              You are a true superstar.
-            </p>
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );

@@ -10,7 +10,7 @@ import Purchase from "./Pages/Purchase/Purchase";
 import NavBar from "./Pages/Shared/NavBar/NavBar";
 import DashBoard from "./Pages/DashBoard/DashBoard";
 import NotFound from "./Pages/Shared/NotFound";
-import MyOrders from "./Pages/DashBoard/MyOrders";
+import CustomersOrder from "./Pages/DashBoard/CustomersOrder";
 import AddReview from "./Pages/DashBoard/AddReview";
 
 function App() {
@@ -37,7 +37,7 @@ function App() {
             </RequireAuth>
           }
         >
-          <Route index element={<MyOrders />} />
+          <Route index element={<CustomersOrder />} />
           <Route path="review" element={<AddReview />} />
         </Route>
         <Route path="*" element={<NotFound />} />

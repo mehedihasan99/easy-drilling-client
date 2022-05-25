@@ -10,6 +10,8 @@ import Purchase from "./Pages/Purchase/Purchase";
 import NavBar from "./Pages/Shared/NavBar/NavBar";
 import DashBoard from "./Pages/DashBoard/DashBoard";
 import NotFound from "./Pages/Shared/NotFound";
+import MyOrders from "./Pages/DashBoard/MyOrders";
+import AddReview from "./Pages/DashBoard/AddReview";
 
 function App() {
   return (
@@ -34,7 +36,10 @@ function App() {
               <DashBoard />
             </RequireAuth>
           }
-        ></Route>
+        >
+          <Route index element={<MyOrders />} />
+          <Route path="review" element={<AddReview />} />
+        </Route>
         <Route path="*" element={<NotFound />} />
       </Routes>
 

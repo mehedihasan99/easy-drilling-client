@@ -5,7 +5,7 @@ const OrderRow = ({ order, index, refetch }) => {
   //   console.log(order);
   const { customer, purchase } = order;
   const handleDelete = (customer) => {
-    fetch(`http://localhost:5000/order/${customer}`, {
+    fetch(`https://gentle-river-04841.herokuapp.com/order/${customer}`, {
       method: "DELETE",
       headers: {
         authorization: `Bearer ${localStorage.getItem("accessToken")}`,

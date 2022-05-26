@@ -9,7 +9,7 @@ const ManageProduct = () => {
     isLoading,
     refetch,
   } = useQuery("orders", () =>
-    fetch("http://localhost:5000/order", {
+    fetch("https://gentle-river-04841.herokuapp.com/order", {
       headers: {
         authorization: `Bearer ${localStorage.getItem("accessToken")}`,
       },

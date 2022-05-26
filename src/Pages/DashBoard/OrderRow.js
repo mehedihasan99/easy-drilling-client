@@ -23,8 +23,8 @@ const OrderRow = ({ order, index, refetch }) => {
   return (
     <tr>
       <th>{index + 1}</th>
-      <td>{order.customer}</td>
       <td>{order.purchase}</td>
+      <td>{order.customer}</td>
       <td>{order.quantity}</td>
       <td>
         <button

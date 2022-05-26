@@ -24,7 +24,7 @@ const Review = () => {
             <div className="card w-96 bg-base-100 shadow-xl">
               <div className="card-body">
                 <h2 className="card-title">– {review.name}</h2>
-                <p>{review.textarea}</p>
+                <p>{review.review}</p>
               </div>
             </div>
           </div>

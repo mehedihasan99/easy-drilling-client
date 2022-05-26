@@ -10,7 +10,7 @@ const ManageAllOrder = () => {
   return (
     <div className="mb-10 mt-4">
       <h2 className=" text-2xl md:text-3xl font-bold text-center text-primary mb-5 ">
-        Manage Product:{manageProducts.length}
+        Manage All Orders:{manageProducts.length}
       </h2>
       <div className="grid grid-col-1 gap-3 md:grid-cols-2   lg:grid-cols-3">
         {manageProducts.map((manageProduct) => (

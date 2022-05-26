@@ -29,7 +29,7 @@ const AddProduct = () => {
   return (
     <div>
       <div className="add-products mx-auto mt-5 ">
-        <h2 className="text-center text-primary text-2xl md:text-3xl mb-4">
+        <h2 className="text-center text-primary text-2xl font-bold md:text-3xl mb-4">
           Add New Product
         </h2>
         <form

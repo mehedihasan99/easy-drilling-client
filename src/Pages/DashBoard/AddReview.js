@@ -10,7 +10,7 @@ const AddReview = () => {
   const navigate = useNavigate();
   const { register, handleSubmit } = useForm();
   const onSubmit = (data) => {
-    console.log(data);
+    // console.log(data);
     const url = `https://gentle-river-04841.herokuapp.com/review`;
     fetch(url, {
       method: "POST",
@@ -61,14 +61,10 @@ const AddReview = () => {
                 <span className="label-text">Review</span>
               </label>
               <textarea
-                required
+                type="text"
+                placeholder="Enter Your review"
                 className="input input-bordered w-full max-w-xs"
-                {...register("textarea", {
-                  minLength: {
-                    value: 250,
-                    message: "Must be 250 character",
-                  },
-                })}
+                {...register("review")}
               />
             </div>
             <input

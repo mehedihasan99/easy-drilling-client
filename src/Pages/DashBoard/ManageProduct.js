@@ -20,7 +20,7 @@ const ManageProduct = () => {
   }
   return (
     <div>
-      <h2 className="text-2xl md:text-3xl text-primary text-center mt-4 mb-4">
+      <h2 className="text-2xl md:text-3xl font-bold text-primary text-center mt-4 mb-4">
         Manage Products:{orders.length}
       </h2>
       <div class="overflow-x-auto">

@@ -14,7 +14,7 @@ const Review = () => {
   }, []);
   return (
     <div>
-      <h2 className="text-4xl font-bold text-center text-primary my-20">
+      <h2 className="text-2xl md:text-4xl font-bold text-center text-primary my-20">
         Reviews:{reviews.length}
       </h2>
       <div className="grid grid-col-1 gap-8 md:grid-cols-2  lg:grid-cols-3">

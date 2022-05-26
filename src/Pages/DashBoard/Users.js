@@ -21,14 +21,13 @@ const Users = () => {
   }
   return (
     <div>
-      <h2 className="text-2xl text-primary  ">All Users:{users.length}</h2>
-      <div class="overflow-x-auto">
+      <div class="overflow-x-auto mt-5">
         <table class="table w-full">
           <thead>
             <tr>
               <th></th>
               <th>Name</th>
-              <th>Job</th>
+              <th>Admin</th>
               <th>Favorite Color</th>
             </tr>
           </thead>

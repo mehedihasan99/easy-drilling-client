@@ -3,7 +3,7 @@ import PurchaseTools from "./PurchaseTools";
 
 const Purchase = () => {
   return (
-    <div className="px-14">
+    <div className=" px-0 md:px-14">
       <PurchaseTools />
     </div>
   );

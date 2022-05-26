@@ -3,7 +3,7 @@ import React from "react";
 const EasyDrill = () => {
   return (
     <div>
-      <h2 className="text-4xl font-bold text-center text-primary mb-20">
+      <h2 className="text-2xl md:text-4xl font-bold text-center text-primary mb-20">
         Easy Drilling
       </h2>
       <div className="grid grid-col-1 md:grid-cols-2  gap-8 lg:grid-cols-3">

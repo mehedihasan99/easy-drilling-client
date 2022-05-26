@@ -3,7 +3,7 @@ import drill from "../../../image/drillPic/drill.jpg";
 const AboutUs = () => {
   return (
     <div>
-      <h2 className="text-4xl font-bold text-center text-primary mt-20">
+      <h2 className="text-2xl md:text-4xl font-bold text-center text-primary mt-20">
         Drill Machine
       </h2>
       <div className="hero min-h-screen">

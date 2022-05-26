@@ -14,7 +14,7 @@ const CustomersOrder = () => {
   }, []);
   return (
     <div>
-      <div class="overflow-x-auto">
+      <div className="overflow-x-auto mt-5">
         <table class="table w-full">
           <thead>
             <tr>
@@ -28,7 +28,7 @@ const CustomersOrder = () => {
           <tbody>
             {orders.map((order, index) => (
               <tr>
-                <th>{index}</th>
+                <th>{index + 1}</th>
                 <td>{order.customerName}</td>
                 <td>{order.customer}</td>
                 <td>{order.purchase}</td>

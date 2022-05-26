@@ -16,6 +16,9 @@ import Blogs from "./Pages/Blogs/Blogs";
 import Portfolio from "./Pages/Portfolio/Portfolio";
 import Users from "./Pages/DashBoard/Users";
 import RequireAdmin from "./Pages/Login/RequireAdmin";
+import AddProduct from "./Pages/DashBoard/AddProduct";
+import ManageProduct from "./Pages/DashBoard/ManageProduct";
+import ManageAllOrder from "./Pages/DashBoard/ManageAllOrder";
 
 function App() {
   return (
@@ -53,7 +56,32 @@ function App() {
               </RequireAdmin>
             }
           />
+          <Route
+            path="addProduct"
+            element={
+              <RequireAdmin>
+                <AddProduct />
+              </RequireAdmin>
+            }
+          />
+          <Route
+            path="manageOrderProducts"
+            element={
+              <RequireAdmin>
+                <ManageAllOrder />
+              </RequireAdmin>
+            }
+          />
+          <Route
+            path="manageProductOrders"
+            element={
+              <RequireAdmin>
+                <ManageProduct />
+              </RequireAdmin>
+            }
+          />
         </Route>
+
         <Route path="*" element={<NotFound />} />
       </Routes>
 

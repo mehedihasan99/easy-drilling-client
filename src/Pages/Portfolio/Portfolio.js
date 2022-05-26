@@ -56,6 +56,36 @@ const Portfolio = () => {
                   <p>
                     Git/GitHub, Firebase, Netlify, Heroku, Dev Tools, VS Code
                   </p>
+                  <h2 className="text-1xl font-bold">Project Live Link:</h2>
+                  <div>
+                    <p>
+                      <a
+                        className="text-cyan-500"
+                        href="https://perfect-size-d555a.web.app/"
+                        target="_blank"
+                      >
+                        Perfect Size
+                      </a>
+                    </p>
+                    <p>
+                      <a
+                        className="text-cyan-500"
+                        href="https://medi-pharm.web.app/"
+                        target="_blank"
+                      >
+                        Medi-pharm
+                      </a>
+                    </p>
+                    <p>
+                      <a
+                        className="text-cyan-500"
+                        href="https://neon-tapioca-02f5d8.netlify.app/"
+                        target="_blank"
+                      >
+                        Car Hoppers
+                      </a>
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>

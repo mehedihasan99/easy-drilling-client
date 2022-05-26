@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 const useDrillProduct = () => {
   const [tools, setTools] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/product")
+    fetch("https://gentle-river-04841.herokuapp.com/product")
       .then((res) => res.json())
       .then((data) => setTools(data));
   }, []);

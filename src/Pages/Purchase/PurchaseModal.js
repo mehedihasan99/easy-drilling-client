@@ -21,7 +21,7 @@ const PurchaseModal = ({ Purchase, setPurchase }) => {
         address: event.target.address.value,
         phone: event.target.phone.value,
       };
-      fetch("http://localhost:5000/purchase", {
+      fetch("https://gentle-river-04841.herokuapp.com/purchase", {
         method: "POST",
         headers: {
           "content-type": "application/json",
